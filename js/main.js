@@ -52,3 +52,60 @@ function TriangleBase(){
     const parallelogramResult = document.getElementById('parallelogram-result');
     parallelogramResult.innerText = area;
  })
+
+ // Rhombus
+ const rhombusCalculate = document.getElementById('rhombus-calculate');
+ rhombusCalculate.addEventListener('click', myRhombus)
+ function myRhombus(){
+    // Rhombus P
+    const rhombusP = document.getElementById('rhombus-p');
+    const rhombusPData = rhombusP.value;
+    const rhombusPConverter = parseFloat(rhombusPData)
+
+    // Rhombus Q
+    const rhombusQ = document.getElementById('rhombus-q');
+    const rhombusQData = rhombusQ.value;
+    const rhombusQConverter = rhombusQData;
+
+    // Rhombus Result
+    const area = 1/2 * rhombusPConverter * rhombusQConverter;
+    const rhombusResult = document.getElementById('rhombus-result');
+    rhombusResult.innerText = area;
+ }
+
+ // Pentagon
+ const pentagonCalculate = document.getElementById('pentagon-calculate');
+ pentagonCalculate.addEventListener('click', function(){
+    // Pentagon P
+    const pentagonP = document.getElementById('pentagon-p');
+    const pentagonPData = pentagonP.value;
+    const pentagonPConverter = parseFloat(pentagonPData);
+
+    // Pentagon Q
+    const pentagonQ = document.getElementById('pentagon-q');
+    const pentagonQData = pentagonQ.value;
+    const pentagonQConverter = parseFloat(pentagonQData);
+
+    // Pentagon Result
+    const area = 1/2 * pentagonPConverter * pentagonQConverter;
+    const pentagonResult = document.getElementById('pentagon-result');
+    pentagonResult.innerText = area;
+ })
+
+ //Ellipse
+ function myEllipse(){
+    const ellipse1 = myConverter('ellipse-m') ;
+    const ellipse2 = myConverter('ellipse-M') ;
+    const area = 3.14 * ellipse1 * ellipse2;
+    setInnerText('ellipse-result', area)
+ }
+ function myConverter(input){
+    const inputfill = document.getElementById(input);
+    const inputFill = inputfill.value;
+    const value = parseFloat(inputFill);
+    return value;
+ }
+function setInnerText(elementid, area){
+    const element = document.getElementById(elementid);
+    element.innerText = area;
+}

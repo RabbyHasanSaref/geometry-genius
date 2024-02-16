@@ -119,16 +119,19 @@
                   <p class="font-semibold ">Area (A) = 0.5 * <span>d <sub>1</sub></span> * <span>d <sub>2</sub></span></p>
                   <div class="flex justify-center gap-5">
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="B">
+                        <input class="w-14" type="text" name="" id="rhombus-p" placeholder="P">
                         cm
                     </div>
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="H">
+                        <input class="w-14" type="text" name="" id="rhombus-q" placeholder="Q">
                         cm
                     </div>
                   </div>
+                  <div>
+                    <p class="font-semibold ">Rhombus: <span id="rhombus-result"></span> <span> cm<sup>2</sup></span></p>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button class="btn btn-primary w-full" id="rhombus-calculate">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -140,16 +143,19 @@
                   <p class="font-semibold ">Area (A) = 0.5 * p * b</p>
                   <div class="flex justify-center gap-5">
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="B">
+                        <input class="w-14" type="text" name="" id="pentagon-p" placeholder="P">
                         cm
                     </div>
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="H">
+                        <input class="w-14" type="text" name="" id="pentagon-q" placeholder="B">
                         cm
                     </div>
                   </div>
+                  <div>
+                    <p class="font-semibold ">Pentagon: <span id="pentagon-result"></span> <span> cm<sup>2</sup></span></p>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button class="btn btn-primary w-full" id="pentagon-calculate">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -161,16 +167,19 @@
                   <p class="font-semibold ">Area (A) = pi ab</p>
                   <div class="flex justify-center gap-5">
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="B">
+                        <input class="w-14" type="text" name="" id="ellipse-m" placeholder="M">
                         cm
                     </div>
                     <div>
-                        <input class="w-14" type="text" name="" id="" placeholder="H">
+                        <input class="w-14" type="text" name="" id="ellipse-M" placeholder="M">
                         cm
                     </div>
                   </div>
+                  <div>
+                    <p class="font-semibold ">Ellipse: <span id="ellipse-result"></span> <span> cm<sup>2</sup></span></p>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button class="btn btn-primary w-full" onclick="myEllipse()">Calculate</button>
                   </div>
                 </div>
               </div>
