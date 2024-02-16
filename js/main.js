@@ -33,3 +33,22 @@ function TriangleBase(){
     const rectangleResult = document.getElementById('rectangle-result');
     rectangleResult.innerText = area;
  })
+
+ // Parallelogram
+ const parallelogram = document.getElementById('parallelogram-calculate');
+ parallelogram.addEventListener('click', function(){
+    // Parallelogram Base 
+    const parallelogramBase = document.getElementById('parallelogram-base');
+    const parallelogramBaseData = parallelogramBase.value;
+    const parallelogramBaseDataConverter = parseFloat(parallelogramBaseData);
+    
+    // parallelogram Height 
+    const parallelogramHeight = document.getElementById('parallelogram-height');
+    const parallelogramHeightData = parallelogramHeight.value;
+    const parallelogramHeightDataConverter = parseFloat(parallelogramHeightData)
+
+    // Parallelogram Result 
+    const area = parallelogramBaseDataConverter * parallelogramHeightDataConverter;
+    const parallelogramResult = document.getElementById('parallelogram-result');
+    parallelogramResult.innerText = area;
+ })
